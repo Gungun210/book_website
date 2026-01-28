@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Books | The Books Mania</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body {margin:0; font-family:'Montserrat',sans-serif; background:#f4f6f8;}
+header, footer {background:linear-gradient(135deg,#2c3e50,#34495e); color:white; text-align:center; padding:20px;}
+nav a {color:white; margin:0 15px; font-weight:bold; text-decoration:none;}
+nav a:hover {color:#f1c40f;}
+
+.grid {
+max-width:1100px; margin:40px auto;
+display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.book-card {
+background:white; border-radius:12px; overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s; text-align:center;
+}
+.book-card:hover {transform:translateY(-8px);}
+.book-card img {width:100%; height:300px; object-fit:cover;}
+.book-card h3 {margin:10px 0;}
+.buy-btn {
+display:inline-block; margin-bottom:15px;
+background:#e67e22; color:white; padding:10px 20px;
+border-radius:6px; text-decoration:none; font-weight:bold;
+}
+.buy-btn:hover {background:#cf6a13;}
+</style>
+</head>
+<body>
+
+<header>
+<h1>The Books Mania</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="books.html">Books</a>
+<a href="subscribe.html">Subscribe</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="grid">
+<div class="book-card">
+<img src="https://images-na.ssl-images-amazon.com/images/I/81eB+7+CkUL.jpg">
+<h3>The Alchemist</h3>
+<a class="buy-btn" href="https://www.amazon.com/dp/0061122416" target="_blank">Buy</a>
+</div>
+
+<div class="book-card">
+<img src="https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL.jpg">
+<h3>Atomic Habits</h3>
+<a class="buy-btn" href="https://www.amazon.com/dp/0735211299" target="_blank">Buy</a>
+</div>
+
+<div class="book-card">
+<img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg">
+<h3>Think and Grow Rich</h3>
+<a class="buy-btn" href="#" target="_blank">Buy</a>
+</div>
+</div>
+
+<footer>
+&copy; 2025 The Books Mania
+</footer>
+
+</body>
+</html>

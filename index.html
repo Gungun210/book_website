@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Books Mania</title>
+
+<!-- Fonts & AOS Animations -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+/* Reset & Base */
+body, html {margin:0; padding:0; font-family:'Montserrat', sans-serif; scroll-behavior:smooth;}
+a {text-decoration:none;}
+header, footer {width:100%;}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color:white; padding:25px 20px; text-align:center; position:sticky; top:0; z-index:1000; box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+header h1 {margin:0; font-size:32px;}
+nav {margin-top:10px;}
+nav a {margin:0 15px; color:white; font-weight:bold; transition:0.3s;}
+nav a:hover {color:#ffd700; transform:scale(1.1);}
+
+/* Hero Section */
+#hero {
+  background-image:url('https://images.unsplash.com/photo-1512820790803-83ca734da794');
+  background-size:cover; background-position:center;
+  text-align:center; color:white; padding:120px 20px;
+}
+#hero h2 {font-size:48px; margin-bottom:20px; text-shadow:2px 2px 10px rgba(0,0,0,0.6);}
+#hero p {font-size:20px; max-width:700px; margin:0 auto; text-shadow:1px 1px 5px rgba(0,0,0,0.6);}
+
+/* Search */
+#search-section {text-align:center; margin:40px auto;}
+#searchInput {padding:10px; width:300px; border-radius:5px; border:1px solid #ccc;}
+#search-section button {padding:10px 15px; background:#2c3e50; color:white; border:none; border-radius:5px; cursor:pointer; transition:0.3s;}
+#search-section button:hover {background:#34495e; transform:scale(1.05);}
+
+/* Book Collection */
+section {max-width:1100px; margin:auto; padding:40px 20px;}
+.book {display:flex; flex-wrap:wrap; background:white; margin-bottom:25px; border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:transform 0.3s;}
+.book:hover {transform:scale(1.02);}
+.book img {width:180px; height:260px; object-fit:cover;}
+.book-details {padding:20px; flex:1;}
+.book-details h2 {margin:0 0 10px; color:#2c3e50;}
+.book-details p {margin:5px 0; color:#555; line-height:1.5;}
+.buy-button {display:inline-block; margin-top:10px; padding:10px 20px; background:#e67e22; color:white; border-radius:5px; font-weight:bold; transition:0.3s;}
+.buy-button:hover {background:#cf6a13; transform:scale(1.05);}
+
+/* Scroll to top */
+#scrollTopBtn {
+  display:none; position:fixed; bottom:40px; right:30px; z-index:99;
+  border:none; outline:none; background:#2c3e50; color:white; cursor:pointer; padding:12px 16px; border-radius:8px; font-size:18px; transition:0.3s;
+}
+#scrollTopBtn:hover {background:#34495e; transform:scale(1.1);}
+
+/* Footer */
+footer {text-align:center; padding:20px; background:#2c3e50; color:white;}
+footer a {margin:0 10px; color:white; font-size:20px;}
+
+/* Responsive */
+@media(max-width:768px){
+  .book {flex-direction:column; align-items:center;}
+  .book img {width:100%; height:auto;}
+  #hero h2 {font-size:32px;} #hero p{font-size:16px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>The Books Mania</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="books.html">Books</a>
+    <a href="subscribe.html">Subscribe</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <h2>Welcome to The Books Mania 📚</h2>
+  <p>Discover best-selling books, explore inspirational stories, and find your next great read!</p>
+</section>
+
+<section id="search-section">
+  <input type="text" id="searchInput" placeholder="Search books...">
+  <button onclick="searchBook()">Search</button>
+</section>
+
+<section id="home">
+  <h2>Featured Books</h2>
+
+  <div class="book" id="the-alchemist" data-aos="fade-up">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/81eB+7+CkUL.jpg" alt="The Alchemist" />
+    <div class="book-details">
+      <h2>The Alchemist</h2>
+      <p><strong>Author:</strong> Paulo Coelho</p>
+      <p>A young shepherd travels to Egypt after dreaming of treasure.</p>
+      <a href="https://www.amazon.com/dp/0061122416" class="buy-button" target="_blank">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="book" id="atomic-habits" data-aos="fade-up">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL.jpg" alt="Atomic Habits" />
+    <div class="book-details">
+      <h2>Atomic Habits</h2>
+      <p><strong>Author:</strong> James Clear</p>
+      <p>Small changes make a big impact. A practical guide to habits.</p>
+      <a href="https://www.amazon.com/dp/0735211299" class="buy-button" target="_blank">Buy Now</a>
+    </div>
+  </div>
+
+</section>
+
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+<footer>
+  &copy; 2025 The Books Mania. All rights reserved.
+  <div>
+    <a href="https://facebook.com" target="_blank">📘</a>
+    <a href="https://twitter.com" target="_blank">🐦</a>
+    <a href="https://instagram.com" target="_blank">📸</a>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+
+const scrollBtn = document.getElementById("scrollTopBtn");
+window.onscroll = function () {
+  scrollBtn.style.display = document.documentElement.scrollTop > 200 ? "block" : "none";
+};
+function scrollToTop(){ window.scrollTo({ top:0, behavior:'smooth'}); }
+
+const bookMap = {
+  "the alchemist": "the-alchemist",
+  "atomic habits": "atomic-habits"
+};
+function searchBook(){
+  const input = document.getElementById("searchInput").value.toLowerCase().trim();
+  const bookId = bookMap[input];
+  if(bookId){
+    const target = document.getElementById(bookId);
+    target.scrollIntoView({behavior:"smooth"});
+    target.style.boxShadow="0 0 20px #f1c40f";
+    setTimeout(()=>{ target.style.boxShadow=""; },2000);
+  }else{ alert("Book not found!"); }
+}
+</script>
+
+</body>
+</html>
