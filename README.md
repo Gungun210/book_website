@@ -31,9 +31,10 @@ Check it out here: [The Books Mania Live](https://gungun210.github.io/book_websi
 ## 🎨 Screenshots
 
 <img width="1772" height="836" alt="Screenshot 2026-01-28 110728" src="https://github.com/user-attachments/assets/5df2eec6-47c7-4266-bd0d-e1eabcffc78e" />
-<img width="1466" height="818" alt="Screenshot 2026-01-28 110742" src="https://github.com/user-attachments/assets/367cac
-<img width="1408" height="845" alt="Screenshot 2026-01-28 110754" src="https://github.com/user-attachments/assets/138cdcd8-bfe8-49cd-967d-5c253c4507c3" />
-96-c6c3-455e-9461-09fe4fde62da" />
+
+<img width="1408" height="845" alt="Screenshot 2026-01-28 110754" src="https://github.com/user-attachments/assets/3148e662-fad2-4215-b4cf-946382cb780c" />
+
+<img width="1466" height="818" alt="Screenshot 2026-01-28 110742" src="https://github.com/user-attachments/assets/2a4ab0eb-cf41-4696-91e7-0c334a596867" />
 
 ## 📫 Contact
 Created by **Gungun** 
